@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_vertical|center_horizontal|center"
+    android:foregroundGravity="center_vertical|center_horizontal|center"
+    tools:context="com.upc.comercial.comercialgb.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="946dp"
+        android:layout_height="449dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center_vertical|center_horizontal|center"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="8dp">
+
+        <EditText
+            android:id="@+id/editText11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:ems="10"
+            android:hint="Usuario"
+            android:inputType="textPersonName"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/editText12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/editText11"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/editText11"
+            android:layout_marginTop="108dp"
+            android:ems="10"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/editText12"
+            android:layout_alignLeft="@+id/editText12"
+            android:layout_alignRight="@+id/editText12"
+            android:layout_alignStart="@+id/editText12"
+            android:layout_centerVertical="true"
+            android:onClick="onValidarLogin"
+            android:text="Ingresar"
+            android:textAlignment="center" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
